@@ -1,6 +1,6 @@
 def solution(n):
-    text = str(n)
-    ans = 0
-    for c in text:
-        ans += int(c)
-    return ans
+    txt = str(n)
+    answer = 0
+    for c in txt:
+        answer += int(c)
+    return answer
