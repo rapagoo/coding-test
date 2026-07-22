@@ -3,7 +3,7 @@ def solution(num_list, n):
     temp_arr = []
     for i in num_list:
         temp_arr.append(i)
-        if len(temp_arr) is n:
+        if len(temp_arr) == n:
             answer.append(temp_arr)
             temp_arr=[]
     return answer
