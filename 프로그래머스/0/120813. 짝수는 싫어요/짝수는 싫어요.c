@@ -4,13 +4,10 @@
 
 int* solution(int n) {
     // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
-    int count = 0;
-    int idx=0;
-    if(n%2==0) count = n / 2;
-    else count = n / 2 + 1;
-    int* answer = (int*)malloc(sizeof(int)*count);
-    for(int i=1;i<=n;++i){
-        if(i%2==1) answer[idx++] = i;
+    int size = (n%2==0) ? (n / 2) : (n / 2) + 1;
+    int* answer = (int*)malloc(sizeof(int)*size);
+    for(int i=0;i<size;++i){
+        answer[i] = i*2+1;
     }
     return answer;
 }
